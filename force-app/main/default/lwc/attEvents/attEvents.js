@@ -88,7 +88,7 @@ renderedCallback(){
                obj.StartDateTime = record.event.Start_DateTime__c;
 
 
-               if(record.Event__r.Location__c){
+               if(record.event.Location__c){
                    obj.Location = record.event.Location__r.Name;
                } else {
                    obj.Location = "This is a virtual event";

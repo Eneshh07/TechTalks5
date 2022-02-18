@@ -1,0 +1,12 @@
+<template>
+    <p>Our current recordId is {recordId}</p>
+        <p>The user has selected {selection}</p>
+
+        <div>
+            <lightning-datatable
+            key-field="Id"
+            data={pastEvents}
+            columns={columnsList}>
+            </lightning-datatable>
+        </div>
+</template>
